@@ -27,6 +27,24 @@ public class Main {
 
         System.out.println(soma);
 
+
+        double F;
+        char resp;
+        
+        do {
+
+            System.out.print("Digite a temperatura em Celsius: ");
+            int temp = sc.nextInt();
+
+            F = ((double) (9 * temp) /5) + 32;
+            System.out.printf("Equivalente em Fahrenheit: %f%n", F);
+
+            System.out.print("Deseja repetir (s/n)? ");
+            resp = sc.next().charAt(0);
+
+        }while (resp != 'n');
+
+
         sc.close();
     }
 }
