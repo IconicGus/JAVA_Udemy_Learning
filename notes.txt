@@ -41,5 +41,39 @@ MODIFICADORES DE ACESSO
 - protected
 - public
 
+Tipos Referencia -> calsses ( avariavel que representa a classe aponta para um endereço de memoria com todos os atributos dessa classe
+
+Tipos Valor (tipos primitivos) -> eles guardam o valor e não um endereço de valores
+
+
+Memoria tem a parte Stack e a parte Heap
+
+Stack -> variaveis locais são desalocadas imediatamente assim que seu escopo local sai de execução
+Heap -> objetos alocados dinamicamente, são desalocados pelo garbage collector quando não possuem mais referencia
+
+boxing -> É o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível
+unboxing -> É o processo de conversão de um objeto tipo referência para um objeto tipo valor compatível
+
+Wrapper classes
+• São classes equivalentes aos tipos primitivos
+• Boxing e unboxing é natural na linguagem
+• Uso comum: campos de entidades em sistemas de informação (IMPORTANTE!)
+• Pois tipos referência (classes) aceitam valor null e usufruem dos recursos OO
+
+Listas
+• Lista é uma estrutura de dados:
+• Homogênea (dados do mesmo tipo)
+• Ordenada (elementos acessados por meio de posições)
+• Inicia vazia, e seus elementos são alocados sob demanda
+• Cada elemento ocupa um "nó" (ou nodo) da lista
+• Tipo (interface): List
+• Classes que implementam: ArrayList, LinkedList, etc.
+
+• Vantagens:
+• Tamanho variável
+• Facilidade para se realizar inserções e deleções
+
+• Desvantagens:
+• Acesso sequencial aos elementos *
 
 
