@@ -1,0 +1,36 @@
+git reset - retira os comandos locais feitos na area de stage
+git checkout - volta a alguma versão anterior (commit anterior)
+
+public static int -> para criar funções que não retornam nulas
+public static void -> para criar funções que retornam vazio
+
+
+nomeVariavelComum
+NomeClasse
+
+POO
+
+classes -> definição
+objetos -> são instancias da classe
+entidades
+metodos -> funções
+atributos -> variaveis
+
+instanciação -> alocação dinâmica da memória
+
+
+refazer modulo 70. exemplos
+
+membro estatico -> funciona independentemente do objeto (não tem varias instancias)
+
+public static final double variavel = alguma coisa -> representa uma variavel estatica
+
+POO
+Encapsulamento
+Poliformismo
+Herança
+
+Construtor -> operação especial da classe, executada no momento de instanciação do objeto
+Sobrecarga -> Recurso de uma classe de oferecer mais de uma operação com o mesmo nome
+Encapsulamento -> Esconder detalhes de implementação de uam classe, expondo apenas operações seguras e que matenham o objeto em um estado consistente
+
