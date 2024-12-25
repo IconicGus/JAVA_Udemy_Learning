@@ -13,6 +13,8 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        Account account1;
+
         System.out.print("Account Number: ");
         int accountNumber = sc.nextInt();
 
@@ -26,20 +28,34 @@ public class Program {
             System.out.print("Deposit: ");
             double firstDeposit = sc.nextDouble();
 
-            Account account1 = new Account(accountNumber, name, firstDeposit);
+            account1 = new Account(accountNumber, name, firstDeposit);
 
-            System.out.println("Account Data:");
-            System.out.printf("Account %d, Holder: %s, Balance: $ %.2f", account1.getAccountNumber(), account1.getName(), account1.getBalance());
         }
         else {
-            Account account1 = new Account(accountNumber, name);
-
-            System.out.println("Account Data:");
-            System.out.printf("Account %d, Holder: %s, Balance: $ %.2f", account1.getAccountNumber(), account1.getName(), account1.getBalance());
+            account1 = new Account(accountNumber, name);
         }
 
+        System.out.printf("%nAccount Data:%n");
+        System.out.printf("Account %d, Holder: %s, Balance: $ %.2f%n%n", account1.getAccountNumber(), account1.getName(), account1.getBalance());
 
 
+        System.out.print("Enter a deposit value: ");
+        double amount = sc.nextDouble();
+
+        account1.deposit(amount);
+
+        System.out.printf("%nUpdated account data:");
+        System.out.printf("Account %d, Holder: %s, Balance: $ %.2f%n%n", account1.getAccountNumber(), account1.getName(), account1.getBalance());
+
+
+
+        System.out.print("Enter a withdraw value: ");
+        amount = sc.nextDouble();
+
+        account1.withdraw(amount);
+
+        System.out.printf("%nUpdated account data:");
+        System.out.printf("Account %d, Holder: %s, Balance: $ %.2f%n", account1.getAccountNumber(), account1.getName(), account1.getBalance());
 
         sc.close();
     }
