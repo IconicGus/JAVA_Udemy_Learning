@@ -34,3 +34,12 @@ Construtor -> operação especial da classe, executada no momento de instanciaç
 Sobrecarga -> Recurso de uma classe de oferecer mais de uma operação com o mesmo nome
 Encapsulamento -> Esconder detalhes de implementação de uam classe, expondo apenas operações seguras e que matenham o objeto em um estado consistente
 
+MODIFICADORES DE ACESSO
+
+- private
+- nada
+- protected
+- public
+
+
+
