@@ -99,3 +99,23 @@ conjunto de constantes relacionadas
 • Vantagem: melhor semântica, código mais legível e auxiliado pelo
 compilador
 
+
+Categorias de classes
+• Em um sistema orientado a objetos, de modo geral "tudo" é objeto.
+• Por questões de design tais como organização, flexibilidade, reuso,
+delegação, etc., há várias categorias de classes:
+Controllers 
+Entities
+Services
+Views
+Repositories
+
+Composição
+• É um tipo de associação que permite que um objeto contenha outro
+• Relação "tem-um" ou "tem-vários"
+• Vantagens
+• Organização: divisão de responsabilidades
+• Coesão
+• Flexibilidade
+• Reuso
+
