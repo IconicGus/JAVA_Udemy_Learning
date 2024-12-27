@@ -27,8 +27,8 @@ public static final double variavel = alguma coisa -> representa uma variavel es
 
 POO
 Encapsulamento
-Poliformismo
 Herança
+Poliformismo
 
 Construtor -> operação especial da classe, executada no momento de instanciação do objeto
 Sobrecarga -> Recurso de uma classe de oferecer mais de uma operação com o mesmo nome
@@ -159,5 +159,38 @@ código
 
 Palavra super
 É possível chamar a implementação da superclasse usando a palavra super.
+
+
+Classes e métodos final
+• Palavra chave: final
+• Classe: evita que a classe seja herdada
+public final class SavingsAccount {
+• Método: evita que o método sob seja sobreposto
+Pra quê?
+• Segurança: dependendo das regras do negócio, às vezes é desejável
+garantir que uma classe não seja herdada, ou que um método não
+seja sobreposto.
+• Geralmente convém acrescentar final em métodos sobrepostos, pois
+sobreposições múltiplas podem ser uma porta de entrada para
+inconsistências
+• Performance: atributos de tipo de uma classe final são analisados de
+forma mais rápida em tempo de execução.
+• Exemplo clássico: String
+
+
+Polimorfismo
+Em Programação Orientada a Objetos, polimorfismo é recurso que
+permite que variáveis de um mesmo tipo mais genérico possam
+apontar para objetos de tipos específicos diferentes, tendo assim
+comportamentos diferentes conforme cada tipo específico.
+
+Account x = new Account(1020, "Alex", 1000.0);
+Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+
+Importante entender
+• A associação do tipo específico com o tipo genérico é feita em tempo de
+execução (upcasting).
+• O compilador não sabe para qual tipo específico a chamada do método
+Withdraw está sendo feita (ele só sabe que são duas variáveis tipo Account):
 
 
