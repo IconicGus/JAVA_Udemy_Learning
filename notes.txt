@@ -265,3 +265,13 @@ flexível, usando boas práticas
 • Possibilidade de auxílio do compilador (Exception)
 • Código mais simples. Não há aninhamento de condicionais: a qualquer momento que uma exceção for
 disparada, a execução é interrompida e cai no bloco catch correspondente.
+
+
+
+Interface
+
+Interface é um tipo que define um conjunto de operações que uma classe deve implementar.
+
+Pra quê interfaces?
+• Para criar sistemas com baixo acoplamento e flexíveis.
+A interface estabelece um contrato que a classe deve cumprir.
