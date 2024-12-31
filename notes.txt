@@ -275,3 +275,16 @@ Interface é um tipo que define um conjunto de operações que uma classe deve i
 Pra quê interfaces?
 • Para criar sistemas com baixo acoplamento e flexíveis.
 A interface estabelece um contrato que a classe deve cumprir.
+
+Inversão de controle
+
+• Inversão de controle
+Padrão de desenvolvimento que consiste em retirar da classe a
+responsabilidade de instanciar suas dependências.
+
+• Injeção de dependência
+É uma forma de realizar a inversão de controle: um componente externo instancia a dependência,
+que é então injetada no objeto "pai". Pode ser implementada de várias formas:
+• Construtor
+• Classe de instanciação (builder / factory)
+• Container / framework
