@@ -1,6 +1,7 @@
 package application;
 
 import entities.Product;
+import util.PriceUpdate;
 import util.ProductPredicate;
 
 import java.util.ArrayList;
@@ -19,9 +20,15 @@ public class Program {
 
         list.removeIf(new ProductPredicate());
 
+        list.forEach(new PriceUpdate());
+
+        /*
         for (Product p: list) {
             System.out.println(p);
         }
+         */
+
+        list.forEach(System.out::println);
 
     }
 }
