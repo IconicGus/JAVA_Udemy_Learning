@@ -442,3 +442,24 @@ Alguns métodos importantes
 • size()
 • keySet() - retorna um Set<K>
 • values() - retornaa um Collection<V>
+
+
+
+
+Programação funcional e cálculo lambda
+
+Transparência referencial
+	Uma função possui transparência referencial se seu resultado for sempre o mesmo
+para os mesmos dados de entrada. Benefícios: simplicidade e previsibilidade.
+
+Funções são objetos de primeira ordem (ou primeira classe)
+	Isso significa que funções podem, por exemplo, serem passadas como parâmetros de
+métodos, bem como retornadas como resultado de métodos.
+
+O que são "expressões lambda"?
+	Em programação funcional, expressão lambda corresponde a uma
+função anônima de primeira classe.
+
+Interface funcional
+É uma interface que possui um único método abstrato. Suas
+implementações serão tratadas como expressões lambda.
