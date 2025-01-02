@@ -4,6 +4,7 @@ git checkout - volta a alguma versão anterior (commit anterior)
 public static int -> para criar funções que não retornam nulas
 public static void -> para criar funções que retornam vazio
 
+classe abstrata????
 
 nomeVariavelComum
 NomeClasse
@@ -288,3 +289,61 @@ que é então injetada no objeto "pai". Pode ser implementada de várias formas:
 • Construtor
 • Classe de instanciação (builder / factory)
 • Container / framework
+
+Aspectos em comum entre herança e interfaces
+• Relação é-um
+• Generalização/especialização
+• Polimorfismo
+
+Diferença fundamental
+• Herança => reuso
+• Interface => contrato a ser cumprido
+
+Herança múltipla e o problema
+do diamante
+Problema do diamante
+A herança múltipla pode gerar o
+problema do diamante: uma
+ambiguidade causada pela
+existência do mesmo método em
+mais de uma superclasse.
+Herança múltipla não é
+permitida na maioria das
+linguagens!
+
+Porém, uma classe pode implementar mais
+de uma interface
+ATENÇÃO:
+Isso NÃO é herança múltipla,
+pois NÃO HÁ REUSO na relação
+entre ComboDevice e as
+interfaces Scanner e Printer.
+ComboDevide não herda, mas
+sim implementa as interfaces
+(cumpre o contrato).
+
+
+Interface Comparable
+
+
+Default methods (defender methods)
+• A partir do Java 8, interfaces podem conter métodos concretos.
+• A intenção básica é prover implementação padrão para métodos, de modo
+a evitar:
+• 1) repetição de implementação em toda classe que implemente a interface
+• 2) a necessidade de se criar classes abstratas para prover reuso da implementação
+• Outras vantagens:
+• Manter a retrocompatibilidade com sistemas existentes
+• Permitir que "interfaces funcionais" (que devem conter apenas um método)
+possam prover outras operações padrão reutilizáveis
+
+Considerações importantes
+• Sim: agora as interfaces podem prover reuso
+• Sim: agora temos uma forma de herança múltipla
+• Mas o compilador reclama se houver mais de um método com a mesma
+assinatura, obrigando a sobrescreve-lo
+• Interfaces ainda são bem diferentes de classes abstratas. Interfaces
+não possuem recursos tais como construtores e atributos.
+
+
+
